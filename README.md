@@ -10,6 +10,8 @@
 后者是另一种形式的在线网课，包含课程视频，提供了代码、配环境指导等等较为连贯的信息。主要内容与线下课相同，但是课程布置顺序，每周的任务布置与实际的斯坦福教学有所出入。作者主要跟随`edx.org`的内容学习。
 
 ## 环境配置
+> 如果本文的链接失效了，在本仓库的`Environment resources`文件夹下有一些较小的文件的备份，可以从这里面提取所需内容
+
 课程第一节课结束后就可以考虑配置作业环境了，课程使用了`COOL`语言来教学，全称为`Classroom Object Oriented Language`，是一门专门用于学习如何构建编译器的教学语言。这也导致了它是一门编译器远多于自身语言程序的语言。
 
 第一课结束后要求配置好`COOL`语言环境进行体验，整个运行环境是基于LINUX的。课程提供了一个很早的ubuntu某发行版的虚拟机镜像，但是由于其32位的内核，导致对于目前的Windows用户来说，难以通过VSCODE的REMOTE SSH功能穿透进去（VSCODE不支持此架构）。而纯使用VIM或者VI一类的编辑器对我来说学习成本较高（请尊重个人喜好），所以采用较新的`Ubuntu LTS 20.04`虚拟机环境，并尽可能安装与课程提供的环境相似的**老版本程序**来保证一切的正常运行。
@@ -75,7 +77,9 @@ sudo apt-get install lib32z1
 
 [https://src.fedoraproject.org/lookaside/pkgs/flex/flex-2.5.35.tar.bz2/10714e50cea54dc7a227e3eddcd44d57/flex-2.5.35.tar.bz2](https://src.fedoraproject.org/lookaside/pkgs/flex/flex-2.5.35.tar.bz2/10714e50cea54dc7a227e3eddcd44d57/flex-2.5.35.tar.bz2)
 
-也可以在Ubuntu中使用`wget`下载，下载后请在某文件夹下解压后，在路径下使用`./configure && make && sudo make install`命令安装即可。（如果没安装make，请先安装）
+也可以在Ubuntu中使用`wget`下载，下载后请在某文件夹下解压后即可。
+
+需要注意的是，这里采用的是编译方式安装，所以需要通过在路径下使用`./configure && make && sudo make install`命令实现安装。（如果没安装make，请先安装）
 
 
 而后的`bison`可以直接通过如下语句安装：
