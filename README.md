@@ -2,11 +2,12 @@
 + 本仓库为Stanfor CS143课程的学习和环境配置教程。
 
 ## 主要资源链接
-+ [CS143官方主页](http://web.stanford.edu/class/cs143/)
-+ [edx.org中的官方课程-包含视频和课件](https://learning.edx.org/course/course-v1:StanfordOnline+SOE.YCSCS1+2T2020/home)
+
 
 前者主要是本课程相关的PDF资料，比如PPT，书面作业，编程作业要求等等。
 
+
+;l;kl;klkkl;kl
 后者是另一种形式的在线网课，包含课程视频，提供了代码、配环境指导等等较为连贯的信息。主要内容与线下课相同，但是课程布置顺序，每周的任务布置与实际的斯坦福教学有所出入。作者主要跟随`edx.org`的内容学习。
 
 ## 环境配置
